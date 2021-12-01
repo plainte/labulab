@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.services-column {
+  float: left;
+  padding: 0 25px;
+  max-width: 28rem;
+  width: 50%;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.services-row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.services-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.services-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 10px;
+  background: url('test.svg') no-repeat, #f1f1f1;
+  background-size: 100% 100%;
+  border-radius: 1rem;
+}
+
+
+.services-content {
+  padding: 25px;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+/* Responsive columns - one services-column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .services-column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,38 @@
+<!-- /templates/page.services.liquid -->
+<div class="grid">
+  <div class="grid__item large--five-sixths push--large--one-twelfth">
+
+    <header class="section-header text-center">
+      <h1>{{ page.title }}</h1>
+      <hr class="hr--small">
+    </header>
+
+    <div class="grid">
+      <div class="services-row">
+            <div class="services-column">
+              <div class="services-card">
+                <div id="individuals" class="services-content">
+                </div>
+              </div>
+            </div>
+            <div class="services-column">
+              <div class="services-card">
+                <div id="corporate" class="services-content">
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+
+  <script>
+    let content = '{{ page.content }}'
+    let json = JSON.parse(content);
+    let individuals = document.getElementById("individuals");
+    individuals.innerHTML = json.col1;
+    let corporate = document.getElementById("corporate");
+    corporate.innerHTML = json.col2;
+  </script>
+
+
+</div>

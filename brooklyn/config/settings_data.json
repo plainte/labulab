@@ -1,0 +1,734 @@
+{
+  "current": {
+    "color_body_bg": "#ffffff",
+    "color_headings": "#000000",
+    "color_button_text": "#f6f6f6",
+    "color_primary": "#d94350",
+    "color_secondary": "#d7a41b",
+    "color_product_background": "#a26b25",
+    "type_header_family": "dosis_n4",
+    "type_header_base_size": "34px",
+    "type_header_border_thickness": "3px",
+    "type_accent_family": "dosis_n4",
+    "type_accent_transform": true,
+    "type_accent_subheadings": true,
+    "type_base_family": "dosis_n4",
+    "type_base_size": "17px",
+    "type_base_italize_titles": false,
+    "cart_type": "page",
+    "social_facebook_link": "https:\/\/www.facebook.com\/LABU-106865015104484",
+    "social_instagram_link": "https:\/\/www.instagram.com\/labu_hungary\/?hl=hu",
+    "checkout_accent_color": "#a26b25",
+    "checkout_button_color": "#000000",
+    "checkout_error_color": "#e32c2b",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/LABU_logo_weblap.png",
+          "logo_max_width": 75,
+          "header_color": "#000000",
+          "transparent_header_enable": true,
+          "transparent_logo": "shopify:\/\/shop_images\/LABU_logo_weblap.png",
+          "transparent_header_color": "#ffffff",
+          "search": "modal",
+          "main_menu_link_list": "main-menu",
+          "drawer_bottom_link_list": "footer",
+          "drawer_search_enable": false,
+          "show_announcement": false,
+          "home_page_only": false,
+          "text": "Itt valamit hirdetni fogunk",
+          "link": "",
+          "color_bg": "#1c1d1d",
+          "color_text": "#ffffff"
+        }
+      },
+      "slideshow": {
+        "type": "slideshow",
+        "disabled": true,
+        "blocks": {
+          "slideshow-0": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/couch-by-interior-brick-wall.jpg",
+              "image_position": "center center",
+              "image_overlay": true,
+              "image_overlay_opacity": 25,
+              "text_alignment": "center",
+              "slide_heading": "Interior Design",
+              "slide_subheading": "",
+              "button_label": "Referenciák",
+              "button_link": "shopify:\/\/pages\/referenciak",
+              "slide_text_color": "#ffffff",
+              "slide_button_label_color": "#ffffff",
+              "slide_button_background_color": "#1f2021"
+            }
+          },
+          "slideshow-1": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/design-plans-color-swatches.jpg",
+              "image_position": "center center",
+              "image_overlay": true,
+              "image_overlay_opacity": 25,
+              "text_alignment": "center",
+              "slide_heading": "Graphic Design",
+              "slide_subheading": "",
+              "button_label": "Referenciák",
+              "button_link": "shopify:\/\/pages\/referenciak-grafika",
+              "slide_text_color": "#ffffff",
+              "slide_button_label_color": "#ffffff",
+              "slide_button_background_color": "#1f2021"
+            }
+          }
+        },
+        "block_order": [
+          "slideshow-0",
+          "slideshow-1"
+        ],
+        "settings": {
+          "home_hero_height": "full",
+          "hero_home_auto": false,
+          "home_hero_auto_speed": 5
+        }
+      },
+      "featured-content": {
+        "type": "featured-content",
+        "disabled": true,
+        "settings": {
+          "home_page_full_width": false,
+          "section_title": "",
+          "text": "<p><strong>* Design labor, csupaszív köntösben *<\/strong><\/p>",
+          "text_size": "large"
+        }
+      },
+      "featured-collections": {
+        "type": "featured-collections",
+        "disabled": true,
+        "blocks": {
+          "featured-collections-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "interior-design-szolgaltatasok"
+            }
+          },
+          "featured-collections-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "graphic-design-szolgaltatasok"
+            }
+          },
+          "featured-collections-2": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": ""
+            }
+          },
+          "featured-collections-3": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": ""
+            }
+          },
+          "featured-collections-4": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "featured-collections-0",
+          "featured-collections-1",
+          "featured-collections-2",
+          "featured-collections-3",
+          "featured-collections-4"
+        ],
+        "settings": {
+          "title": "Szolgáltatások"
+        }
+      },
+      "featured-products": {
+        "type": "featured-products",
+        "disabled": true,
+        "settings": {
+          "title": "Featured collection",
+          "home_featured_products": "",
+          "collection_products_grid": "grid"
+        }
+      },
+      "featured-product": {
+        "type": "featured-product",
+        "disabled": true,
+        "settings": {
+          "featured_product": "",
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_payment_button": true,
+          "show_share_buttons": true,
+          "enable_video_looping": false
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "settings": {
+          "heading": "Iratkozz fel hírlevelünkre a legfrissebb LABU-s újdonságokért!",
+          "subheading": "<p>Szuper kedvezmények, érdekes infók és csodálatos meglepetések. Tőlünk, Nektek :)<\/p>"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "show_payment_icons": false,
+          "show_currency_selector": true,
+          "show_locale_selector": true,
+          "footer_link_list": "footer"
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "show_collection_image": true,
+          "collection_sort_enable": false,
+          "collection_tags_enable": false,
+          "collection_products_grid": "grid",
+          "product_vendor_enable": false
+        }
+      },
+      "16316116707ce085ac": {
+        "type": "featured-collections",
+        "blocks": {
+          "375c01ba-3b73-4aa7-9b93-7e47e6a7d367": {
+            "type": "collection",
+            "settings": {
+              "collection": "dental-xv"
+            }
+          },
+          "9bcc408f-a400-405b-9d1c-3ba0e086e335": {
+            "type": "collection",
+            "settings": {
+              "collection": "ov-utcai-epicentrum"
+            }
+          },
+          "bdbd82d3-77f0-4bab-bec9-068a0d6fd5be": {
+            "type": "collection",
+            "settings": {
+              "collection": "dental-xv-1"
+            }
+          },
+          "7fd04526-f59e-4915-8386-a80d304627eb": {
+            "type": "collection",
+            "settings": {
+              "collection": "pottomie"
+            }
+          },
+          "6c0efc5f-578e-4661-a86d-d9edae1cae9e": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": "blu"
+            }
+          },
+          "f79b92d0-eec8-43fc-9a48-5d95d5fd0dbc": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": "haller-home"
+            }
+          },
+          "7c1eb8b8-7e3c-4bd9-859f-162cc8ef4334": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": "furdokucko"
+            }
+          },
+          "85ac10c5-e3a1-4557-a70a-d17bf253e6a3": {
+            "type": "collection",
+            "settings": {
+              "collection": "living-gardens"
+            }
+          },
+          "1b7650ee-7b83-45b0-936e-b0b161dc3f32": {
+            "type": "collection",
+            "settings": {
+              "collection": "global-lake-marathon"
+            }
+          }
+        },
+        "block_order": [
+          "375c01ba-3b73-4aa7-9b93-7e47e6a7d367",
+          "9bcc408f-a400-405b-9d1c-3ba0e086e335",
+          "bdbd82d3-77f0-4bab-bec9-068a0d6fd5be",
+          "7fd04526-f59e-4915-8386-a80d304627eb",
+          "6c0efc5f-578e-4661-a86d-d9edae1cae9e",
+          "f79b92d0-eec8-43fc-9a48-5d95d5fd0dbc",
+          "7c1eb8b8-7e3c-4bd9-859f-162cc8ef4334",
+          "85ac10c5-e3a1-4557-a70a-d17bf253e6a3",
+          "1b7650ee-7b83-45b0-936e-b0b161dc3f32"
+        ],
+        "settings": {
+          "title": "PROJEKTEK"
+        }
+      },
+      "1631611691e12dfc1b": {
+        "type": "slideshow",
+        "blocks": {
+          "1631611691e12dfc1b-0": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/design-plans-color-swatches.jpg",
+              "image_position": "center center",
+              "image_overlay": true,
+              "image_overlay_opacity": 16,
+              "text_alignment": "left",
+              "slide_heading": "HELLÓCSKA",
+              "slide_subheading": "",
+              "button_label": "",
+              "button_link": "",
+              "slide_text_color": "#ffffff",
+              "slide_button_label_color": "#ffffff",
+              "slide_button_background_color": "#1f2021"
+            }
+          },
+          "1631611691e12dfc1b-1": {
+            "type": "slide",
+            "disabled": true,
+            "settings": {
+              "image_position": "center center",
+              "image_overlay": true,
+              "image_overlay_opacity": 25,
+              "text_alignment": "center",
+              "slide_heading": "Hero Banner",
+              "slide_subheading": "An introductory",
+              "button_label": "Shop now",
+              "button_link": "",
+              "slide_text_color": "#ffffff",
+              "slide_button_label_color": "#ffffff",
+              "slide_button_background_color": "#1f2021"
+            }
+          },
+          "2d9daccd-cd67-4483-9ed1-618b662caab1": {
+            "type": "slide",
+            "disabled": true,
+            "settings": {
+              "image_position": "center center",
+              "image_overlay": true,
+              "image_overlay_opacity": 25,
+              "text_alignment": "center",
+              "slide_heading": "Hero Banner",
+              "slide_subheading": "An introductory",
+              "button_label": "Shop now",
+              "button_link": "",
+              "slide_text_color": "#ffffff",
+              "slide_button_label_color": "#ffffff",
+              "slide_button_background_color": "#1f2021"
+            }
+          }
+        },
+        "block_order": [
+          "1631611691e12dfc1b-0",
+          "1631611691e12dfc1b-1",
+          "2d9daccd-cd67-4483-9ed1-618b662caab1"
+        ],
+        "settings": {
+          "home_hero_height": "full",
+          "hero_home_auto": false,
+          "home_hero_auto_speed": 5
+        }
+      },
+      "163161381126adb31d": {
+        "type": "featured-row",
+        "settings": {
+          "layout": "left",
+          "title": "Belsőépítészet",
+          "text": "<p>ez meg az<\/p>",
+          "button_label": "katt és csekk",
+          "button_link": "shopify:\/\/pages\/belsoepiteszeti-szolgaltatasok"
+        }
+      },
+      "1631613972ea858d77": {
+        "type": "featured-collections",
+        "disabled": true,
+        "blocks": {
+          "1631613972ea858d77-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "pottomie"
+            }
+          },
+          "1631613972ea858d77-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "living-gardens"
+            }
+          },
+          "1631613972ea858d77-2": {
+            "type": "collection",
+            "settings": {
+              "collection": "dental-xv-1"
+            }
+          },
+          "41a95c1b-4e84-438b-a52a-858511b9671c": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": "global-lake-marathon"
+            }
+          },
+          "855383f1-7d2e-426f-8a20-e02509be1f4a": {
+            "type": "collection",
+            "disabled": true,
+            "settings": {
+              "collection": "balatoni-jokedv"
+            }
+          }
+        },
+        "block_order": [
+          "1631613972ea858d77-0",
+          "1631613972ea858d77-1",
+          "1631613972ea858d77-2",
+          "41a95c1b-4e84-438b-a52a-858511b9671c",
+          "855383f1-7d2e-426f-8a20-e02509be1f4a"
+        ],
+        "settings": {
+          "title": "Graphic Design"
+        }
+      },
+      "1631614111a923b2b1": {
+        "type": "featured-content",
+        "settings": {
+          "home_page_full_width": false,
+          "section_title": "",
+          "text": "<p>A vállalkozás létrehozását és fejlesztését a „Vállalkozó Start” program keretében<br\/>az OFA Nonprofit Kft. támogatta. A támogatás forrását a Nemzeti Foglalkoztatási Alap biztosította.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "1637662993182a9726": {
+        "type": "featured-blog",
+        "disabled": true,
+        "settings": {
+          "title": "Blog",
+          "blog": "news",
+          "post_limit": 3,
+          "blog_show_date": true,
+          "blog_show_author": false,
+          "blog_show_image": false,
+          "blog_show_excerpt": true,
+          "show_view_all": false
+        }
+      },
+      "16376636468f72c90a": {
+        "type": "featured-row",
+        "settings": {
+          "layout": "right",
+          "title": "GRAFIKA",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      }
+    },
+    "content_for_index": [
+      "1631611691e12dfc1b",
+      "163161381126adb31d",
+      "16376636468f72c90a",
+      "featured-content",
+      "featured-collections",
+      "16316116707ce085ac",
+      "slideshow",
+      "featured-products",
+      "featured-product",
+      "1631613972ea858d77",
+      "newsletter",
+      "1631614111a923b2b1",
+      "1637662993182a9726"
+    ]
+  },
+  "presets": {
+    "Classic": {
+      "checkout_accent_color": "#a26b25",
+      "checkout_button_color": "#000000",
+      "checkout_error_color": "e32c2b",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "show_announcement": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "slide",
+              "settings": {}
+            },
+            "slideshow-1": {
+              "type": "slide",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
+          "settings": {}
+        },
+        "featured-content": {
+          "type": "featured-content",
+          "settings": {
+            "section_title": "",
+            "text_size": "large"
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collections-0": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-1": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-2": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-3": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-4": {
+              "type": "collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "featured-collections-0",
+            "featured-collections-1",
+            "featured-collections-2",
+            "featured-collections-3",
+            "featured-collections-4"
+          ],
+          "settings": {}
+        },
+        "featured-products": {
+          "type": "featured-products",
+          "settings": {
+            "collection_products_grid": "grid"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {}
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-content",
+        "featured-collections",
+        "featured-products",
+        "featured-product",
+        "newsletter"
+      ]
+    },
+    "Playful": {
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#565656",
+      "color_borders": "#5dd2b4",
+      "color_button_text": "#ffffff",
+      "color_primary": "#7737BD",
+      "color_secondary": "#058677",
+      "color_product_background": "#fff4f6",
+      "color_sale_tag": "#e80970",
+      "color_input": "#f6f6f6",
+      "color_newsletter": "#bde9f2",
+      "color_drawer_background": "#360f5f",
+      "color_drawer_text": "#ffffff",
+      "color_drawer_border": "#50297a",
+      "color_drawer_button": "#7737BD",
+      "color_drawer_button_text": "#ffffff",
+      "color_headings": "#321863",
+      "type_header_family": "quicksand_n7",
+      "type_header_base_size": "38px",
+      "type_header_border_thickness": "1px",
+      "type_accent_family": "roboto_n7",
+      "type_accent_transform": true,
+      "type_accent_spacing": true,
+      "type_accent_subheadings": false,
+      "type_base_family": "helvetica_n4",
+      "type_base_size": "17px",
+      "type_base_italize_titles": false,
+      "cart_type": "drawer",
+      "cart_notes_enable": true,
+      "social_facebook_link": "",
+      "social_twitter_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_snapchat_link": "",
+      "social_google_plus_link": "",
+      "social_tumblr_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "social_fancy_link": "",
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fff4f6",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_body_font": "Roboto",
+      "checkout_accent_color": "#7737BD",
+      "checkout_button_color": "#7737BD",
+      "checkout_error_color": "#f01130",
+      "checkout_banner_background_color": "#fff",
+      "checkout_call_to_action_color": "#a26b25",
+      "checkout_use_header_image": false,
+      "collection_products_grid": "collage",
+      "customer_layout": "customer_area",
+      "favicon_enable": false,
+      "product_vendor_enable": false,
+      "social_sharing_style": "clean",
+      "sections": {
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "1495823280244": {
+              "type": "slide",
+              "settings": {
+                "slide_text_color": "#ffffff",
+                "slide_button_label_color": "#003B34",
+                "slide_button_background_color": "#84D1B2"
+              }
+            }
+          },
+          "block_order": [
+            "1495823280244"
+          ],
+          "settings": {
+            "hero_home_auto": false,
+            "home_hero_auto_speed": 5
+          }
+        },
+        "featured-products": {
+          "type": "featured-products",
+          "settings": {
+            "home_featured_products": "frontpage",
+            "collection_products_grid": "collage"
+          }
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {}
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo_max_width": 260,
+            "search": "modal",
+            "main_menu_link_list": "main-menu",
+            "show_announcement": false,
+            "color_bg": "#290c49",
+            "color_text": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "footer_link_list": "footer"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "collection_tags_enable": false,
+            "collection_products_grid": "grid",
+            "product_vendor_enable": false
+          }
+        },
+        "1494860348200": {
+          "type": "featured-row",
+          "settings": {
+            "layout": "right"
+          }
+        },
+        "1494894035034": {
+          "type": "featured-row",
+          "settings": {
+            "layout": "left"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "product_vendor_enable": false,
+            "social_sharing_products": true,
+            "enable_image_zoom": false,
+            "enable_video_looping": false
+          }
+        },
+        "1496078102297": {
+          "type": "advanced-content",
+          "blocks": {
+            "1496078102297-0": {
+              "type": "html",
+              "settings": {
+                "code": "<div style=\"text-align:center;\">\n<h1 class=\"h1\">Use HTML to format your text so it can be easily read.<\/h1>This text can be used to share information about your brand with customers.<\/div>",
+                "width": "100%",
+                "alignment": "top-middle"
+              }
+            }
+          },
+          "block_order": [
+            "1496078102297-0"
+          ],
+          "settings": {}
+        },
+        "1496177901425": {
+          "type": "advanced-content",
+          "blocks": {
+            "1496177901425-0": {
+              "type": "html",
+              "settings": {
+                "code": "<div style=\"width:745px;text-align: center; margin: 0 auto;\">This text can be used to share information about your brand with customers.<\/div>",
+                "width": "100%",
+                "alignment": "top-middle"
+              }
+            }
+          },
+          "block_order": [
+            "1496177901425-0"
+          ],
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "1496177901425",
+        "featured-products",
+        "newsletter",
+        "1496078102297",
+        "1494860348200",
+        "1494894035034"
+      ]
+    }
+  }
+}
