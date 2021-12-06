@@ -6,6 +6,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
   {% if settings.favicon %}
     <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png" />
   {% endif %}
@@ -29,6 +33,8 @@
   <!-- CSS ================================================== -->
   {{ 'timber.scss.css' | asset_url | stylesheet_tag }}
   {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+  {{ 'services.css' | asset_url | stylesheet_tag }}
+  {{ 'interior-design.css' | asset_url | stylesheet_tag }}
 
   <!-- Sections ================================================== -->
   <script>
@@ -77,8 +83,6 @@
 
   {{ 'jquery-2.2.3.min.js' | asset_url | script_tag }}
 
-  {{ 'services.css' | asset_url | stylesheet_tag }}
-
   <script src="{{ 'lazysizes.min.js' | asset_url }}" async="async"></script>
 
   <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
@@ -123,13 +127,7 @@
 
   <div id="PageContainer" class="page-container">
     <main class="main-content" role="main">
-      {% unless request.page_type == "index" %}
-        <div class="wrapper">
-      {% endunless %}
         {{ content_for_layout }}
-      {% unless request.page_type == "index" %}
-        </div>
-      {% endunless %}
     </main>
 
     <hr class="hr--large">

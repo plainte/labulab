@@ -441,7 +441,7 @@ $color-blankstate-background: rgba($colorTextBody, 0.10);
 {{ accent_family_bold | font_face }}
 
 // Header Font
-$headerFontStack: {{ header_family.family }}, {{ header_family.fallback_families }};
+$headerFontStack: Fredoka One, cursive; //{{ header_family.family }}, {{ header_family.fallback_families }};
 $headerFontWeight: {{ header_family.weight }};
 $headerFontStyle: {{ header_family.style }};
 $headerBaseFontSize: {{ settings.type_header_base_size }};
@@ -454,7 +454,7 @@ $bodyFontStyle: {{ base_family.style }};
 $baseFontSize: {{ settings.type_base_size }}; // Henceforth known as 1em
 
 // Accent Font
-$accentFontStack: {{ accent_family.family }}, {{ accent_family.fallback_families }};
+$accentFontStack: Fredoka One, cursive; //{{ accent_family.family }}, {{ accent_family.fallback_families }};
 $accentFontWeight: {{ accent_family.weight }};
 $accentFontWeightBold: {{ accent_family_bold.weight | default: 700 }};
 $accentFontStyle: {{ accent_family.style }};
@@ -1281,12 +1281,12 @@ input[type="image"] {
 
   .section-header {
     @include at-query($max, $small) {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
   }
 
   .section-header + .section-subheading {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 
     @include at-query($min, $postSmall) {
       margin-top: -50px;
@@ -3540,7 +3540,7 @@ button.mfp-arrow {
 /*================ Rich text section ================*/
 .rich-text {
   .section-header {
-    margin-bottom: $gutter / 2.5;
+    margin-bottom: 0px;
   }
 }
 
@@ -4870,3 +4870,4 @@ html {
 #PROJEKTEK {
   scroll-margin-top: 100px;
 }
+
