@@ -1,8 +1,0 @@
-development:
-  password: shptka_3c4c1135d07ff72195f1ffc8e1b35e9c
-  theme_id: "126267097242"
-  store: labu-studio.myshopify.com
-  ignore_files:
-    - "*.gif"
-    - "*.jpg"
-    - config/settings_data.json
