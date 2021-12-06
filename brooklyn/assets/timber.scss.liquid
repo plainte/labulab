@@ -449,7 +449,7 @@ $color-blankstate-background: rgba($colorTextBody, 0.10);
 {{ accent_family_bold | font_face }}
 
 // Header Font
-$headerFontStack: {{ header_family.family }}, {{ header_family.fallback_families }};
+$headerFontStack: Fredoka One, cursive; //{{ header_family.family }}, {{ header_family.fallback_families }};
 $headerFontWeight: {{ header_family.weight }};
 $headerFontStyle: {{ header_family.style }};
 $headerBaseFontSize: {{ settings.type_header_base_size }};
@@ -462,7 +462,7 @@ $bodyFontStyle: {{ base_family.style }};
 $baseFontSize: {{ settings.type_base_size }}; // Henceforth known as 1em
 
 // Accent Font
-$accentFontStack: {{ accent_family.family }}, {{ accent_family.fallback_families }};
+$accentFontStack: Fredoka One, cursive; //{{ accent_family.family }}, {{ accent_family.fallback_families }};
 $accentFontWeight: {{ accent_family.weight }};
 $accentFontWeightBold: {{ accent_family_bold.weight | default: 700 }};
 $accentFontStyle: {{ accent_family.style }};
@@ -868,15 +868,24 @@ $class-type: unquote(".");
     2. Remove any margins and paddings that might affect the grid system.
     3. Apply a negative `margin-left` to negate the columns' gutters.
 ==============================================================================*/
-#{$class-type}grid,
+#{$class-type}grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+
+  @include at-query($min, $postSmall) {
+  }
+}
 #{$class-type}grid-uniform {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: -($gridGutter / 2);
+  margin-left: -$gridGutter / 2;
+
 
   @include at-query($min, $postSmall) {
-    margin-left: -$gridGutter;
+    margin-left: -$gridGutter / 2;
   }
 }
 
@@ -1944,7 +1953,6 @@ $socialIconFontStack: 'icons';
 
 .ajaxcart__row {
   > .grid {
-    margin-left: -$gutter / 2;
 
     > .grid__item {
       padding-left: $gutter / 2;
@@ -2459,19 +2467,20 @@ $socialIconFontStack: 'icons';
 
 /*================ Module | Section Headers ================*/
 .section-header {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  margin-top:50px;
 
   .section-header__title {
     letter-spacing: 0;
   }
 
   @include at-query($min, $postSmall) {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
 }
 
 .section-header--404 {
-  margin-bottom: 0;
+  margin-bottom: 25px;
   padding: 80px 0;
 }
 
@@ -2480,6 +2489,7 @@ $socialIconFontStack: 'icons';
     display: table;
     table-layout: fixed;
     width: 100%;
+    margin-bottom:25px;
   }
 
   .section-header__title {
