@@ -4,6 +4,15 @@
       {% include 'search-bar', search_btn_style: 'btn--secondary', search_bar_location: 'search-bar--drawer' %}
     {% endif %}
 
+    <script>
+      function closeDrawerAndScroll(id) {
+        timber.LeftDrawer.close(new KeyboardEvent("escape"));
+        setTimeout(() => { 
+          document.getElementById(id).scrollIntoView();
+        }, 500);
+      }
+    </script>
+
     <ul class="mobile-nav">
       {% for link in linklists[section.settings.main_menu_link_list].links %}
         {% if link.links != blank %}
@@ -12,7 +21,7 @@
               <a
                 {% if template.name == "index" %} 
                   {% if link.title contains "SZOLGÁLTATÁSOK" or link.title  contains "PROJEKTEK" %}
-                    href = "#{{ link.title }}"
+                    href="javascript:closeDrawerAndScroll( '{{ link.title }}' );"
                   {% else %}
                     href = "{{ link.url }}"
                   {% endif %}
@@ -98,7 +107,7 @@
             <a
               {% if template.name == "index" %} 
                 {% if link.title contains "SZOLGÁLTATÁSOK" or link.title  contains "PROJEKTEK" %}
-                  href = "#{{ link.title }}"
+                  href="javascript:closeDrawerAndScroll( '{{ link.title }}' );"
                 {% else %}
                   href = "{{ link.url }}"
                 {% endif %}

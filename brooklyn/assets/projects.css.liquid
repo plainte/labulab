@@ -1,5 +1,13 @@
 {% assign whiteish = '#EEECE8' %}
-{% assign blue = '#2B3990' %}
+{% if collection.title contains "DENTAL" %}
+  {% assign border_color = '#A58C72' %}
+{% elsif collection.title contains "Pöttömie" %}
+  {% assign border_color = '#A58C72' %}
+{% elsif collection.title contains "epicentrum" %}
+  {% assign border_color = '#A58C72' %}
+{% else %}
+  {% assign border_color = '#A58C72' %}
+{% endif %}
 
 .project-info {
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
@@ -49,7 +57,7 @@
   width: auto;
   min-height: 80%;
   border-style: solid;
-  border-color: {{ blue }};
+  border-color: {{ border_color }};
   border-width: 5px;
 }
 
@@ -270,7 +278,7 @@
     width: auto;
     min-height: 80%;
     border-style: solid;
-    border-color: {{ blue }};
+    border-color: {{ border_color }};
     border-width: 5px;
   }
 

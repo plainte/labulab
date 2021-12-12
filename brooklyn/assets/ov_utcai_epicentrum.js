@@ -11,8 +11,8 @@ const json = {
     <p>
     A végeredmény a szó legpozitívabb értelmében egyszerű, mégis részletgazdag. 
     Több, számunkra is különösen izgalmas elem segítségével igyekeztünk nem mindennapi pezsgést kölcsönözni a térnek, hogy dinamikája egészen sajátos legyen. 
-    Ennek a törekvésnek az egyik főhőse a <a href="https://www.kaza.com/">KAZA Concrete</a> magyar manufaktúra által kézzel készített, (vmilyen) betonpanel, amelybe nem csak megbízóink, 
-    de mi is rögtön beleszerettünk, ugyan olyan mélységgel, mint az <a href="https://www.eagledecor.hu/">Eagle Decor</a> keze munkáját dicsérő növénydekorációba, 
+    Ennek a törekvésnek az egyik főhőse a <a href="https://www.kaza.com/" style="color:#E3A725">KAZA Concrete</a> magyar manufaktúra által kézzel készített, (vmilyen) betonpanel, amelybe nem csak megbízóink, 
+    de mi is rögtön beleszerettünk, ugyan olyan mélységgel, mint az <a href="https://www.eagledecor.hu/" style="color:#E3A725">Eagle Decor</a> keze munkáját dicsérő növénydekorációba, 
     amely szintén meghatározó eleme a teret felölelő atmoszférának.
     </p>
     <p>
