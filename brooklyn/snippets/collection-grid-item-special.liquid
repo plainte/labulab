@@ -64,9 +64,11 @@
         </noscript>
         <div class="collection-grid__item-overlay">
           <div class="grid__image lazyload">
-            <img src="{{ collection_image | img_url: '300x300' }}"
+            <img src="{{ collection_image | img_url: '480x480' }}"
               loading="lazy"
-              alt="Different quirky meeting personas with question marks above them" 
+              alt="project picture"
+              data-sizes="auto"
+              data-parent-fit="cover"
               class="image-absolute">
           </div>
     {% endif %}

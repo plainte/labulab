@@ -1,4 +1,4 @@
-<!-- /templates/collection-interior-design.liquid -->
+<!-- /templates/collection-services.liquid -->
 <div class="grid">
 
   <header class="section-header text-center">
@@ -6,138 +6,91 @@
     <hr class="hr--small">
   </header>
 
+  <div class="wave lazyload">
+    <img
+    {% if collection.title contains "PRIVÁT" %}
+      src="{{ 'wave.png' | asset_url }}"
+    {% else %}
+      src="{{ 'direct-wave.png' | asset_url }}"
+    {% endif %}
+      loading="lazy"
+      alt="project picture"
+      data-sizes="auto"
+      class="image-absolute">
+  </div>
   <div class="simple-i-design">
-    <div class="simple-i-design-content">
-      <p>
-      Otthonunk felújítása rengeteg fejfájást okozhat bármelyikünk számára. <br>
-      A megálmodott víziók más képet mutathatnak a valóságban, az új térelrendezés kényelmetlenné teheti a mindennapjainkat, a berendezések ára lehet, 
-      hogy nem tükrözi a tőlük elvárt minőséget, és bekövetkezhet a legrosszabb dolog is, mikor a folyamat végére úgy érezzük, legszívesebben vissza csinálnánk mindent úgy, ahogy van.
-      </p>
-      <p>
-      A LABU egyik legfontosabb célja, hogy megbízói egy élvezetes és kreatív folyamat részesei lehessenek, és úgy érezzék, legszemélyesebb vágyaik és céljaik olyan kezekbe kerülnek, 
-      amelyek a gondos és biztonságos környezet biztosítása mellett melegséggel és odaadással kezelik otthonuk újjászületésének egész folyamatát.
-      </p>
+    <div class="simple-i-design-content" id="intro">
     </div>
   </div>
+  <div class="wave lazyload">
+    <img 
+    {% if collection.title contains "PRIVÁT" %}
+      src="{{ 'bottom-wave.png' | asset_url }}"
+    {% else %}
+      src="{{ 'bottom-direct-wave.png' | asset_url }}"
+    {% endif %}
+      loading="lazy"
+      alt="project picture"
+      data-sizes="auto"
+      class="image-absolute">
+  </div>
+  <div class=px50-div></div>
   <div class="i-column-with-top-bottom-margin">
-    <div class="i-card-purple">
-    <h5>Segítségedre lehetünk, ha…</h5>
+    <div class="i-card-colored-border" id="info">
+    <h5 style="text-transform: inherit">#miértmi</h5>
     <ul>
-      <li>vannak már ötleteid, de bizonytalan vagy az elképzeléseidben</li>
-      <li>biztonságban éreznéd magad egy tervező kézfogásában</li>
-      <li>úgy érzed, szükséged lenne digitális tervekre az általad elgondoltak pontosításához</li>
-      <li>nem tudod kiválasztani a megfelelő anyagokat és berendezéseket</li>
-      <li>hasznodra válna egy bevásárlólista, ahol pontosan követheted tervezett kiadásaid</li>
-      <li>teljes a káosz a fejedben, és nem tudod, hogy vágj bele a folyamatba</li>
-      <li>finom korrigálnád otthonod egy-egy szegletét</li>
     </ul>
     </div>
   </div>
   <div class=px50-div></div>
   <div>
-    <h5 class="text-center">
-      Elmeséljük, hogy ha a LABU-t választod, mik lesznek a közös kis munka lépései:
+    <h5 class="text-center" id="process-intro">
     </h5>
   </div>
-  <div class=px50-div></div>
-  <div class="i-column">
-    <div class="i-card-basic">
-      <div class="i-column-header text-center">
-        <h5>IGÉNYFELMÉRÉS</h5>
-      </div>
-      <div class="i-content">
-        <ul>
-          <li>digitális vagy személyes konzultáció</li>
-          <li>meglévő alaprajz és egyéb információk átadása, rögzítése</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="vl"></div>
-  <div class="i-column">
-    <div class="i-card-basic">
-      <div class="i-column-header text-center">
-        <h5>HELYSZÍNBEJÁRÁS</h5>
-      </div>
-      <div class="i-content">
-        <ul>
-          <li>személyes találkozó a projekt helyszínén</li>
-          <li>a releváns terek méreteinek felmérése</li>
-          <li>szerződéskötés</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="vl"></div>
-  <div class="i-column">
-    <div class="i-card-basic">
-      <div class="i-column-header text-center">
-        <h5>ÖTLET FÁZIS</h5>
-      </div>
-      <div class="i-content">
-        <ul>
-          <li>skiccek, vázlattervek készítése</li>
-          <li>konzultációk, terv prezentációk készítése moodboardokkal</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="vl"></div>
-  <div class="i-column">
-    <div class="i-card-basic">
-      <div class="i-column-header text-center">
-        <h5>TERVEZÉS</h5>
-      </div>
-      <div class="i-content">
-        <ul>
-          <li>belsőépítészeti tervek készítése (alaprajzok, falnézetek, tömeg modellek)</li>
-          <li>tér funkciók és berendezések meghatározása</li>
-          <li>anyagok, textúrák és színek kiválasztása</li>
-          <li>látványtervek készítése</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="vl"></div>
-  <div class="i-column">
-    <div class="i-card-basic">
-      <div class="i-column-header text-center">
-        <h5>TERVDOKUMENTÁCIÓ ÁTADÁSA</h5>
-      </div>
-      <div class="i-content">
-        <ul>
-          <li>végső belsőépítészeti és látványtervek, egyéb grafikai anyagok átadása</li>
-          <li>konszignációs elemlista átadása</li>
-          <li>egyeztetés a kivitelezőkkel</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class=px50-div></div>
+  <div class=px50-div id="process-begin"></div>
+  <!-- process rendered from json -->
+  <div class=px50-div id="process-end"></div>
   <div class="i-column-with-top-bottom-margin">
-    <div class="i-card-purple">
-    <h4>Olvass tovább, ha kíváncsi vagy, hogy miért érdemes velünk dolgozni!</h4>
+    <div class="i-card-colored-border" id="extra-details">
+    <h4 style="text-transform: inherit"></h4>
     <ul>
-      <li>online konzultációt is választhatsz, ha számodra kényelmesebb</li>
-      <li>több terv javaslatot is készítünk, hogy</li>
-      <li>TODO</li>
     </ul>
     </div>
   </div>
   <div class=px50-div></div>
+  <div class="wave lazyload">
+    <img 
+    {% if collection.title contains "PRIVÁT" %}
+      src="{{ 'wave.png' | asset_url }}"
+    {% else %}
+      src="{{ 'direct-wave.png' | asset_url }}"
+    {% endif %}
+    loading="lazy"
+    alt="project picture"
+    data-sizes="auto"
+    class="image-absolute">
+  </div>
   <div class="simple-i-design">
-    <div class="simple-i-design-content">
-      <p>
-      Itt még lesz valami levezetés
-      </p>
-      <p>
-      Csak mert miért ne ?
-      </p>
+    <div class="i-credit-row">
+      <div class="i-credit-column">
+      </div>
+      <div class="i-credit-column">
+      </div>
     </div>
   </div>
+  <div class="wave lazyload">
+    <img
+    {% if collection.title contains "PRIVÁT" %}
+      src="{{ 'bottom-wave.png' | asset_url }}"
+    {% else %}
+      src="{{ 'bottom-direct-wave.png' | asset_url }}"
+    {% endif %}
+      loading="lazy"
+      alt="project picture"
+      data-sizes="auto"
+      class="image-absolute">
+  </div>
 </div>
-
-
 
 {% schema %}
 {

@@ -441,8 +441,8 @@ $color-blankstate-background: rgba($colorTextBody, 0.10);
 {{ accent_family_bold | font_face }}
 
 // Header Font
-$headerFontStack: Fredoka One, cursive; //{{ header_family.family }}, {{ header_family.fallback_families }};
-$headerFontWeight: {{ header_family.weight }};
+$headerFontStack: giulia-plain,sans-serif; //{{ header_family.family }}, {{ header_family.fallback_families }};
+$headerFontWeight: 700;//{{ header_family.weight }};
 $headerFontStyle: {{ header_family.style }};
 $headerBaseFontSize: {{ settings.type_header_base_size }};
 
@@ -454,8 +454,8 @@ $bodyFontStyle: {{ base_family.style }};
 $baseFontSize: {{ settings.type_base_size }}; // Henceforth known as 1em
 
 // Accent Font
-$accentFontStack: Fredoka One, cursive; //{{ accent_family.family }}, {{ accent_family.fallback_families }};
-$accentFontWeight: {{ accent_family.weight }};
+$accentFontStack: giulia-plain,sans-serif; //{{ accent_family.family }}, {{ accent_family.fallback_families }};
+$accentFontWeight: 700;//{{ accent_family.weight }};
 $accentFontWeightBold: {{ accent_family_bold.weight | default: 700 }};
 $accentFontStyle: {{ accent_family.style }};
 
@@ -1289,7 +1289,6 @@ input[type="image"] {
     margin-bottom: 25px;
 
     @include at-query($min, $postSmall) {
-      margin-top: -50px;
       margin-bottom: 50px;
     }
   }
@@ -2769,10 +2768,12 @@ $slick-dot-character: '\2022';
 /*================ Text Shop Name ================*/
 .site-header__logo {
   font-size: em(20px);
+  margin: 0 15px;
 
   @include at-query($min, $large) {
     text-align: left;
     font-size: em(25px);
+    margin: 0 15px;
   }
 
   @include at-query($max, $medium) {
@@ -3617,21 +3618,23 @@ button.mfp-arrow {
 }
 
 .image-absolute {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: contain;
-    object-fit: contain;
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height:100%;
+  max-height:100%;
+  max-width:100%;
+  object-fit: cover;
 }
 
 .grid__image {
   position: relative;
   width: 100%;
   height:75%;
+}
+
+.grid__image img {
+  width: 100%;
+  height:auto;
 }
 
 
@@ -3679,7 +3682,7 @@ button.mfp-arrow {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  background-color: #FFF0F5;
+  background-color: #EEECE8;
 
    .collection-grid__item-content {
     display: table-cell;
@@ -4869,5 +4872,11 @@ html {
 
 #PROJEKTEK {
   scroll-margin-top: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .hero__title {
+    margin-left: -15px;
+  }
 }
 

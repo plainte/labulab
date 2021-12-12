@@ -8,12 +8,41 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/vfu1mnd.css">
 
   {% if settings.favicon %}
     <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png" />
   {% endif %}
 
+  {% if collection.template_suffix %}
+    {% if collection.template_suffix contains "services" %}
+      {% if collection.title contains "PRIVÁT" %}
+        {{ 'private-interior-design.js' | asset_url | script_tag }}
+      {% else %}
+        {% if collection.title contains "GRAFIKA" %}
+          {{ 'business-graphics.js' | asset_url | script_tag }}
+        {% else %}
+          {{ 'business-interior-design.js' | asset_url | script_tag }}
+        {% endif %}
+      {% endif %}
+      {{ 'services.js' | asset_url | script_tag }}
+    {% elsif collection.template_suffix contains "projects" %}
+      {% if collection.title contains "DENTAL" %}
+        {{ 'dental_xv.js' | asset_url | script_tag }}
+      {% elsif collection.title contains "Pöttömie" %}
+        {{ 'pottomie.js' | asset_url | script_tag }}
+      {% elsif collection.title contains "epicentrum" %}
+        {{ 'ov_utcai_epicentrum.js' | asset_url | script_tag }}
+      {% else %}
+        {{ 'furdokucko.js' | asset_url | script_tag }}
+      {% endif %}
+      {{ 'projects.js' | asset_url | script_tag }}
+    {% endif %}
+  {% endif %}
+
+  {% if template.name == "index" %} 
+    {{ 'index-renderer.js' | asset_url | script_tag }}
+  {% endif %}
   <!-- Title and description ================================================== -->
   <title>
   {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}

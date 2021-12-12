@@ -4542,10 +4542,11 @@ theme.updateSlickSwipe = function(element, allowSwipe)
 
 $(document).ready(function() {
   theme.init();
-  var sections = new theme.Sections();
+  let sections = new theme.Sections();
 
   sections.register('product-template', theme.Product);
   sections.register('collection-template', theme.Collection);
+  sections.register('collection-projects-template', theme.Collection);
   sections.register('header-section', theme.HeaderSection);
   sections.register('featured-content-section', theme.FeaturedContentSection);
   sections.register('newsletter-section', theme.NewsletterSection);

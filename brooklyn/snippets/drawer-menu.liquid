@@ -11,9 +11,17 @@
             <div class="mobile-nav__has-sublist">
               <a
                 {% if template.name == "index" %} 
-                  href="#{{ link.title }}"
+                  {% if link.title contains "SZOLGÁLTATÁSOK" or link.title  contains "PROJEKTEK" %}
+                    href = "#{{ link.title }}"
+                  {% else %}
+                    href = "{{ link.url }}"
+                  {% endif %}
                 {% else %}
-                  href="{{ link.url }}"
+                  {% if link.title contains "SZOLGÁLTATÁSOK" or link.title contains "PROJEKTEK" %} 
+                    href="/#{{ link.title }}"
+                  {% else %}
+                    href="{{ link.url }}"
+                  {% endif %}
                 {% endif %}
                 class="mobile-nav__link"
                 id="Label-{{ forloop.index }}"
@@ -89,9 +97,17 @@
           <li class="mobile-nav__item">
             <a
               {% if template.name == "index" %} 
-                href="#{{ link.title }}"
+                {% if link.title contains "SZOLGÁLTATÁSOK" or link.title  contains "PROJEKTEK" %}
+                  href = "#{{ link.title }}"
+                {% else %}
+                  href = "{{ link.url }}"
+                {% endif %}
               {% else %}
-                href="{{ link.url }}"
+                {% if link.title contains "SZOLGÁLTATÁSOK" or link.title contains "PROJEKTEK" %} 
+                  href="/#{{ link.title }}"
+                {% else %}
+                  href="{{ link.url }}"
+                {% endif %}
               {% endif %}
               class="mobile-nav__link"
               {% unless request.page_type == 'index' %}{% if link.active %}aria-current="page"{% endif %}{% endunless%}>

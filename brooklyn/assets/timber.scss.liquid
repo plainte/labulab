@@ -449,8 +449,8 @@ $color-blankstate-background: rgba($colorTextBody, 0.10);
 {{ accent_family_bold | font_face }}
 
 // Header Font
-$headerFontStack: Fredoka One, cursive; //{{ header_family.family }}, {{ header_family.fallback_families }};
-$headerFontWeight: {{ header_family.weight }};
+$headerFontStack: giulia-plain,sans-serif;//{{ header_family.family }}, {{ header_family.fallback_families }};
+$headerFontWeight: 700;//{{ header_family.weight }};
 $headerFontStyle: {{ header_family.style }};
 $headerBaseFontSize: {{ settings.type_header_base_size }};
 
@@ -462,8 +462,8 @@ $bodyFontStyle: {{ base_family.style }};
 $baseFontSize: {{ settings.type_base_size }}; // Henceforth known as 1em
 
 // Accent Font
-$accentFontStack: Fredoka One, cursive; //{{ accent_family.family }}, {{ accent_family.fallback_families }};
-$accentFontWeight: {{ accent_family.weight }};
+$accentFontStack: giulia-plain,sans-serif;//{{ accent_family.family }}, {{ accent_family.fallback_families }};
+$accentFontWeight: 700;//{{ accent_family.weight }};
 $accentFontWeightBold: {{ accent_family_bold.weight | default: 700 }};
 $accentFontStyle: {{ accent_family.style }};
 
@@ -893,7 +893,7 @@ $class-type: unquote(".");
   @include box-sizing();
   float: left;
   min-height: 1px;
-  padding-left: $gridGutter / 2;
+  padding: 0 $gutter / 2;
   vertical-align: top;
 
   @if $mobile-first == true {
@@ -901,7 +901,7 @@ $class-type: unquote(".");
   }
 
   @include at-query($min, $postSmall) {
-    padding-left: $gridGutter;
+    padding: 0 $gutter / 2;
   }
 }
 
@@ -1955,7 +1955,7 @@ $socialIconFontStack: 'icons';
   > .grid {
 
     > .grid__item {
-      padding-left: $gutter / 2;
+      padding: 0 $gutter / 2;
     }
   }
 }
@@ -2396,7 +2396,7 @@ $socialIconFontStack: 'icons';
 
 .site-header__logo {
   text-align: center;
-  margin: 0 auto;
+  margin: 0 15px;
 }
 
 .site-header__logo-image {
